@@ -3,19 +3,67 @@
     <meta charset="UTF-8">
     <title>JavaScript Calculator</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
     <link rel="stylesheet" href="css/style.css">
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js' async></script>
+    <script src="js/index.js" async></script>
+    <script src="https://use.fontawesome.com/80c9a7f760.js" async></script>
   </head>
 
   <body>
-    
+
+    <!-- Banner -->
+    <div class="banner text-primary">
+      <div class="text">
+        <h1>JavaScript Calculator</h1>
+      </div>
+    </div>
+
+    <!-- Calculator Container -->
+    <div class="container">
+      <div class="calcBox">
+
+        <!-- Calculator Result -->
+        <div class="calcResult">0</div>
+
+        <!-- Calculator Buttons -->
+        <div class="calcButtons">
+          <a class="btn btn-danger" id="clrBtn">AC</a>
+          <a class="btn btn-danger" id="bkBtn">←</a>
+          <a class="btn btn-info" id="divBtn">÷</a>
+          <a class="btn btn-info" id="mulBtn">×</a>
+          <br />
+          <a class="btn btn-default" id="7Btn">7</a>
+          <a class="btn btn-default" id="8Btn">8</a>
+          <a class="btn btn-default" id="9Btn">9</a>
+          <a class="btn btn-info" id="mulBtn">×</a>
+          <br />
+          <a class="btn btn-default" id="4Btn">4</a>
+          <a class="btn btn-default" id="5Btn">5</a>
+          <a class="btn btn-default" id="6Btn">6</a>
+          <a class="btn btn-info" id="addBtn">+</a>
+          <br />
+          <a class="btn btn-default" id="1Btn">1</a>
+          <a class="btn btn-default" id="2Btn">2</a>
+          <a class="btn btn-default" id="3Btn">3</a>
+          <a class="btn btn-default" id="ptBtn">.</a>
+          <br />
+          <a class="btn btn-default" id="0Btn">0</a>
+          <a class="btn btn-default" id="modBtn">%</a>
+          <a class="btn btn-success btn-wide" id="eqlBtn">=</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="text">
+        <p>by James J. Attard &copy; <script>document.write(new Date().getFullYear());</script></p>
+      </div>
+    </div>
+
   </body>
-
-  <script
-    src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'>
-  </script>
-
-  <script
-    src="js/index.js">
-  </script>
 </html>
