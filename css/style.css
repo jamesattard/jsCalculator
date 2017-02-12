@@ -48,45 +48,27 @@ h1 {
   margin-bottom: 5px;
 }
 
-.btn-danger {
-  box-shadow: 0 3px 0 0 #b44341;
-}
-
-.btn-danger:active, .btn-danger.active {
+.btn:active, .btn.active {
 	box-shadow: none;
 	margin-bottom: -3px;
 	margin-top: 3px;
+}
+
+.btn-danger {
+  box-shadow: 0 3px 0 0 #b44341;
 }
 
 .btn-default {
   box-shadow: 0 3px 0 0 #dcdada;
 }
 
-.btn-default:active, .btn-default.active {
-	box-shadow: none;
-	margin-bottom: -3px;
-	margin-top: 3px;
-}
-
 .btn-info {
   box-shadow: 0 3px 0 0 #007299;
-}
-
-.btn-info:active, .btn-info.active {
-	box-shadow: none;
-	margin-bottom: -3px;
-	margin-top: 3px;
 }
 
 .btn-wide {
   width: 108px;
   box-shadow: 0 3px 0 0 #3b783a;
-}
-
-.btn-wide:active, .btn-wide.active {
-	box-shadow: none;
-	margin-bottom: -3px;
-	margin-top: 3px;
 }
 
 .calcBox {
