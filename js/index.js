@@ -44,7 +44,10 @@ $(document).ready(function(){
   }
 
   function getResult() {
-    $("#dispResult").html(eval(entryArr.join("")));
+    var result=eval(entryArr.join(""))
+    $("#dispResult").html(result);
+    entryArr = [];
+    entryArr.push(result);
   }
 
   function setDisplay() {
