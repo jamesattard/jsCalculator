@@ -12,8 +12,12 @@ $(document).ready(function(){
 
   function inputCalc(input) {
     console.log(input);
+    // If input is greater than 9 chars
+    if (entryArr.length===9) {
+      console.log('Display full');
+    }
     // Make sure input does not start with an operator
-    if (entryArr.length===0 && !opDict.hasOwnProperty(input)) {
+    else if (entryArr.length===0 && !opDict.hasOwnProperty(input)) {
       entryArr.push(input);
       console.log('1st Val', entryArr);
     }
@@ -32,10 +36,6 @@ $(document).ready(function(){
       entryArr.push(input);
       console.log('4th Val', entryArr);
     }
-    // If input is greater than 9 chars
-    // else if {
-    //
-    // }
     // If input did not pass validation rules, throw error
     else {
       console.log("Input error");
@@ -43,13 +43,33 @@ $(document).ready(function(){
     setDisplay();
   }
 
+  function getResult() {
+    $("#dispResult").html(eval(entryArr.join("")));
+  }
+
   function setDisplay() {
     console.log(entryArr);
     $("#dispResult").html(entryArr.join(""));
+    if (entryArr.length==0) {
+      $("#dispResult").html(0);
+    }
   }
 
-  $(".btn").click(function (){
-    inputCalc(this.id);
+  $(".btn").click(function () {
+    if (this.id==='AC'){
+      entryArr = [];
+      setDisplay();
+    }
+    else if (this.id==='←') {
+      entryArr.pop();
+      setDisplay();
+    }
+    else if (this.id==='ANS') {
+      getResult();
+    }
+    else{
+      inputCalc(this.id);
+    }
   }); // end of OCF
 
 }); // end of DRF
